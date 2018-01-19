@@ -39,6 +39,7 @@ package librarymanagement {
     type GetClassifiersModule = sbt.GetClassifiersModule
 
     type MavenRepository = sbt.MavenRepository
+    type Repository = sbt.Repository
 
     implicit class ModuleIDOps(val _m: ModuleID) extends AnyVal {
       def withConfigurations(configurations: Option[String]): ModuleID =
